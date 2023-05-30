@@ -14,7 +14,7 @@ import {
   QuoteGeneratorBtn,
   QuoteGeneratorBtnText,
 } from "@/components/quotegenerator/QuoteGeneratorElements";
-import Clouds1 from "@/assets/Clouds1.png";
+import Clouds1 from "@/assets/cloud-and-thunder.png";
 import Clouds2 from "@/assets/cloudy-weather.png";
 import { useState } from "react";
 
@@ -35,10 +35,10 @@ export default function Home() {
           </QuoteGeneratorBtn>
         </QuoteGeneratorInnerCon>
       </QuoteGeneratorCon>
-      {/* 
-      <BackgroundImage1 src={Clouds1} height="300" alt="cloudy background" /> */}
-      {/* <BackgroundImage2 src={Clouds2} height="200" alt="sunny background" /> */}
-      {/* <FooterCon>
+
+      <BackgroundImage1 src={Clouds1} height="300" alt="cloudy background" />
+      <BackgroundImage2 src={Clouds2} height="200" alt="sunny background" />
+      <FooterCon>
         <>
           Quotes Generated: {numberOfQuotes}
           <br />
@@ -51,7 +51,7 @@ export default function Home() {
             @HoareauSteevy
           </FooterLink>
         </>
-      </FooterCon> */}
+      </FooterCon>
     </GradientBackgroundCon>
   );
 }
