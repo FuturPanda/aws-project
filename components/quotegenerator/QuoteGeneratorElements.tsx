@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const GradientBackgroundCon = styled.div`
   background-size: 400% 400%;
-  background-image: linear-gradient(to right, #e66465, #9198e5);
+  background-image: linear-gradient(to right, #44a08d, #093637);
   animation: gradient 6s ease infinite;
   height: 100vh;
   width: 100vw;
@@ -71,8 +71,71 @@ export const QuoteGeneratorCon = styled.div`
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 `;
-export const QuoteGeneratorInnerCon = styled.div``;
-export const QuoteGeneratorTitle = styled.h1``;
-export const QuoteGeneratorSubTitle = styled.h2``;
-export const QuoteGeneratorBtn = styled.button``;
-export const QuoteGeneratorBtnText = styled.p``;
+export const QuoteGeneratorInnerCon = styled.div`
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+`;
+export const QuoteGeneratorTitle = styled.h1`
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  padding: 0 20px 0 20px;
+  position: relative;
+  @media only screen and (max-width: 600px) {
+    font-size: 30px;
+  }
+`;
+export const QuoteGeneratorSubTitle = styled.h2`
+  color: white;
+  font-size: 35px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 0 20px 0 20px;
+  @media only screen and (max-width: 600px) {
+    font-size: 25px;
+  }
+`;
+export const QuoteGeneratorBtn = styled.button`
+  height: 100px;
+  width: 300px;
+
+  position: relative;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+  top: 20px;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%,0);
+
+  background: rgba(0, 0, 70, 0.3);
+  box-shadow: 0 8px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur() (20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  @media only screen and (max-width: 600px) {
+    height: 80px;
+    width: 200px;
+  }
+  &:hover {
+    filter:brightness(3);
+    transition:0.2s all ease-in-out; 
+    transform:scale(1.1)
+    transform-origin: center; 
+  }
+`;
+
+export const QuoteGeneratorBtnText = styled.div`
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+`;
